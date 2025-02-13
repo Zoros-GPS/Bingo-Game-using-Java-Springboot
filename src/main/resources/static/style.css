@@ -1,0 +1,157 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif; /* More modern and readable font */
+  text-align: center;
+  padding: 3%;
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 20px ), repeating-linear-gradient( #177e89, #444cf7 );
+  background-size: cover;  /* Ensures full-page coverage */
+  background-attachment: fixed;
+  color: #000000;
+}
+
+/* Table styling */
+table {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  table-layout: fixed;
+  border: 2px solid #FFF;
+  padding: 5px;
+  border-radius: 10px;
+  table-layout: fixed
+}
+
+/* Table header */
+th {
+  color: #ffffff;
+  border: 1px solid #FFF;
+  background: #14175a;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+/* Table cells */
+td {
+  color: #000000;
+  border: 1px solid #FFF;
+  background: #ffffff;
+  font-size: 1.8rem;
+  text-align: center;
+  transition: background 0.3s, color 0.3s ease;
+  border-radius: 10px;
+  padding: 3.5%;
+}
+
+/* Hover effect */
+td:hover {
+  background: #57e26e;
+  color: white;
+}
+
+.highlight {
+  background-color: #57e26e; 
+  color: #ffffff; /* Yellow background */
+}
+
+.white-bg {
+  background-color: rgb(255, 255, 255) !important;
+}
+
+/* Responsive font size */
+@media (min-width: 600px) {
+  td {
+      font-size: 2rem;
+  }
+}
+
+td:empty::after {
+  content: "\00a0"; /* Non-breaking space to maintain height */
+  display: block;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  background: #FFF;
+  color: #000;
+  font-size: 1.3vw;
+  font-weight: bold;
+  padding: 3%;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  transition: background 0.3s, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #000;
+  color: #FFF;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+.dat{
+  width: 33%;
+  float: left;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid #FFF;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.dat1{
+  width: 66%;
+  float: right;
+}
+
+.free{
+  background: #57e26e;
+  color: rgb(255, 255, 255);
+}
+
+.shadow-dance-text {
+  font-size: 2rem;
+  color: #000000;
+  text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+  animation: shadow-dance 2s infinite;
+}
+
+@keyframes shadow-dance {
+  0%, 100% {
+      text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+  }
+  50% {
+      text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+  }
+}
+
+/* Layout adjustments *//*
+.mycontainer div {
+  width: 33%;
+  float: left;
+}
+
+.gameplace div {
+  width: 66%;
+  float: right;
+}
+
+ Clearfix to prevent layout issues 
+.mycontainer::after, 
+.gameplace::after {
+  content: "";
+  display: table;
+  clear: both;
+  color: #ffc857;
+  border: 1px solid #FFF;
+  background: #084c61
+} */
+
+
